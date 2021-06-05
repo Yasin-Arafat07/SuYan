@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body{
+	font-family: 'Noto Sans JP', sans-serif;
+}
+*,*::after, *::before{
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+a{
+   text-decoration: none;
+}
+ul{
+   list-style-type: none;
+}
+img{
+   display: block;
+   width: 100%;
+   height: auto;
+}
+.container{
+   width: 85%;
+   margin: 0 auto;
+}
+/*---Web Top---*/
+.top-up{
+   background-color: #008b8b;
+}
+.mail-phone{
+   display: flex;
+   width: 30%;
+}
+
+.mail a, .mail i, .phone a, .phone i{
+   margin-right: 5px;
+   color: #f5f5f5;
+}
+.mail, .phone{
+   padding-right: 15px;
+   
+}
+
+/*--Social Media--*/
+.sociallink{
+   width: 60%;
+   display: flex;
+   justify-content: flex-end;
+}
+.sociallink li a{
+   color: #f2f3f4;
+   padding: 0px 15px;
+}
+.sociallink li a:hover{
+   color: #000075;
+   transition-duration: 0.4s;
+   background-color: whitesmoke;
+   border-radius: 10px;
+}
+.social ul{
+   display: flex;
+   justify-content: flex-end;
+}
+.link-inner{
+   display: flex;
+   padding: 7px 10px;
+   justify-content: space-between;
+}
+
+/*------Menu Area-----*/
+.header-area{
+   background-color: #00ffef;
+   padding: 20px 0px;
+   
+}
+
+.head-inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.logo{
+   /*width: 10%;*/
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   font-size: 25px;
+   width: 10%
+}
+.logo i{
+   font-size: 30px;
+   text-align: center;
+}
+.menu{
+   width: 80%;
+   /*background-color: white;*/
+   
+}
+.menu ul{
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   
+}
+.menu ul a{
+  color: black;
+  padding: 15px 20px;
+  border-width: 2px black;
+  font-size: 20px;
+}
+.menu ul a:hover{
+   text-decoration: underline white 3px;
+   padding-bottom: 5px;
+   transition-duration: 0.3s;
+}
+/*------About us------*/
+.about-page-all{
+   background-color: #F0FFFF;
+}
+.home-blog{
+   width: 10%;
+   color: #6F00FF;
+   display: flex;
+   font-size: 18px;
+   padding: 20px 0px;
+   justify-content: space-between;
+}
+.home-blog a{
+   color: #6F00FF;
+}
+.home-blog i{
+   padding-left: 20px;
+   color: gray;
+}
+
+.about-title{
+   padding: 30px 0px;
+   text-decoration: underline;
+}
+.about-all{
+   background-color: white;
+}
+.about-us{
+   display: flex;
+   padding: 15px;
+}
+.about-content{
+   padding: 0px 15px;
+}
+.about-content h2{
+   padding-bottom: 10px;
+   border-bottom: 1.5px solid gainsboro;
+}
+.about-content p{
+   padding: 20px 0px 0px;
+}
+/*-----Our Team-----*/
+.our-team-all{
+   background-color: #F0FFFF;
+   padding: 50px 0px;
+}
+.team-title{
+   padding: 50px 0px 30px;
+   text-decoration: underline;
+   font-weight: bold;
+}
+.team-all{
+   width: 100%;
+}
+.team{
+   display: flex;
+   justify-content: space-between;
+}
+.team-content{
+   width: 23%;
+   background-color: white;
+   margin-bottom: 40px;
+   box-shadow: .5px 1px 8px  #00b7eb;
+   justify-content: space-between;
+   border-radius: 2px;
+}
+.team-content img{
+   /*width: 350px;*/
+   height: 350px;
+}
+.team-text{
+   text-align: center;
+   padding: 20px;
+}
+
+/*-----Our History----*/
+.history-all{
+   background-color: #F0FFFF;
+   padding: 50px 0px;
+}
+.history{
+   width: 100%;
+   background-color: white;
+   padding: 20px;
+}
+.history-title{
+   padding: 5px 0px 20px;
+   text-decoration: underline;
+   border-bottom: 1.5px solid gainsboro;
+   font-weight: bold;
+}
+.history-content-all{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding: 20px 0px;
+}
+.history-content{
+   width: 31%;
+   
+}
+.history-text h3{
+   padding: 10px 0px 5px;
+}
+.history-text p{
+   padding: 20px 0px 5px;
+}
+/*-------Advice Section----*/
+.advice{
+   background-color: #f0ffff;
+   padding: 50px 0px;
+
+}
+.advice-text{
+   text-align: center;
+   padding: 20px 0px;
+   margin-bottom: 20px;
+}
+.adviceber{
+   display: flex;
+   /*width: 100%;*/
+   justify-content: space-between;
+}
+.advice-section{
+   width: 22%;
+   text-align: center;
+   background-color: white;
+   padding: 20px;
+   margin-bottom: 40px;
+   box-shadow: 0px 1px 4px #00b7eb;
+}
+.advice-section i{
+   font-size: 30px;
+   color: #00b7eb;
+}
+.advice-section h3{
+   padding: 10px 0px;
+}
+/*----Footer Section----*/
+.footer-area{
+   background-color: #00FFEF;
+}
+.footer{
+   width: 100%;
+   justify-content: space-between;
+}
+.footer-menu{
+   width: 100%;
+   display: flex;
+   padding: 15px 0px;
+   justify-content: space-between;
+   border-bottom: 1.5px solid #008B8B;
+   align-items: center;
+}
+.f-menu{
+   width: 80%;
+}
+.f-menu ul{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   padding: 20px;
+}
+.f-menu ul a{
+  color: black;
+  padding: 15px 20px;
+  border-width: 2px black;
+  font-size: 20px;
+
+}
+.f-menu ul a:hover{
+   color: #fff;
+   transition-duration: 0.3s;
+}
+
+
+.icon li a{
+   color: black;
+   padding: 0px 15px;
+}
+.icon li a:hover{
+   color: #fff;
+   transition-duration: 0.4s;
+   background-color: #000;
+   border-radius: 10px;
+}
+.icon ul{
+   display: flex;
+   justify-content: flex-end;
+   
+
+}
+.address{
+   display: flex;
+   justify-content: space-between;
+   text-align: center;
+   padding: 15px 0px;
+}
+.address i{
+   margin-right: 10px;
+   color: black;
+
+}
+.address i:hover{
+   color: whitesmoke;
+   transition-duration: 0.3s;
+}
+
