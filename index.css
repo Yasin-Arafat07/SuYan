@@ -166,6 +166,12 @@ img{
    background-color: #00ffff;
    padding: 10px 20px;
    text-align: center;
+   border-radius: 5px;
+}
+.banner a:hover{
+   color: whitesmoke;
+   background-color: #008b8b;
+   transition-duration: 0.3s;
 }
 /*-----Bottom Banner---*/
 .down-banner{
@@ -341,7 +347,7 @@ img{
 .subs-content{
    width: 100%;
    display: flex;
-   padding: 20px 0px;
+   padding: 30px 0px;
    
    justify-content: flex-start;
 }
@@ -366,7 +372,7 @@ img{
 .subs-content input[type="submit"]{
    width: 8%;
    font-weight: bold;
-   color: whitesmoke;
+   color: white;
    background-color: #ff0000;
    border-radius: 5px;
    box-shadow: 2px 5px 5px gainsboro;
