@@ -8,6 +8,18 @@ body{
    padding: 0px;
    box-sizing: border-box;
 }
+:root{
+   --deep-cyan: #008B8B;
+   --lite-cyan: #00FFEF;
+   --cyan: #00ffff;
+   --bg-cyan: #F0FFFF;
+   --deep-blue: #0000cd;
+   --lite-blue: #4f86f7;
+   --red: #ff0000;
+   --navy: #000080;
+   --blue: #00B7EB;
+   --black: #353839;
+}
 a{
    text-decoration: none;
 }
@@ -25,7 +37,12 @@ img{
 }
 /*---Web Top---*/
 .top-up{
-   background-color: #008b8b;
+   background-color: var(--deep-cyan);
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 999;
+   width: 100%;
 }
 .mail-phone{
    display: flex;
@@ -34,7 +51,7 @@ img{
 
 .mail a, .mail i, .phone a, .phone i{
    margin-right: 5px;
-   color: #f5f5f5;
+   color: whitesmoke;
 }
 .mail, .phone{
    padding-right: 15px;
@@ -48,11 +65,11 @@ img{
    justify-content: flex-end;
 }
 .sociallink li a{
-   color: #f2f3f4;
+   color: whitesmoke;
    padding: 0px 15px;
 }
 .sociallink li a:hover{
-   color: #000075;
+   color: var(--navy);
    transition-duration: 0.4s;
    background-color: whitesmoke;
    border-radius: 10px;
@@ -69,9 +86,14 @@ img{
 
 /*------Menu Area-----*/
 .header-area{
-   background-color: #00ffef;
+   background-color: var(--lite-cyan);
    padding: 20px 0px;
-   
+   position: fixed;
+   top: 38px;
+   left: 0;
+   width: 100%;
+   z-index: 999;
+   box-shadow: 1px 1px 8px 0px #555555;   
 }
 
 .head-inner{
@@ -80,12 +102,14 @@ img{
    align-items: center;
 }
 .logo{
-   /*width: 10%;*/
    display: flex;
    justify-content: space-between;
    align-items: center;
    font-size: 25px;
    width: 10%
+}
+.logo a{
+   color: black;
 }
 .logo i{
    font-size: 30px;
@@ -100,34 +124,28 @@ img{
    display: flex;
    justify-content: flex-end;
    align-items: center;
-   
 }
 .menu ul a{
   color: black;
   padding: 15px 20px;
-  border-width: 2px black;
   font-size: 20px;
 }
 .menu ul a:hover{
-   text-decoration: underline white 3px;
-   padding-bottom: 5px;
-   transition-duration: 0.3s;
+   border-bottom: 3px solid white;
+   transition-duration: .2s;
 }
-/*------Destinatins------*/
-.destinatins-page-all{
-   background-color: #F0FFFF;
-   padding: 0px 0px 50px;
-}
+
+
+/*------Home and Blog Section------*/
 .home-blog{
    width: 10%;
-   color: #6F00FF;
    display: flex;
    font-size: 18px;
    padding: 20px 0px;
    justify-content: space-between;
 }
 .home-blog a{
-   color: #6F00FF;
+   color: var(--deep-blue);
 }
 .home-blog i{
    padding-left: 20px;
@@ -135,8 +153,9 @@ img{
 }
 /*----Destination----*/
 .destinatins-page-all{
-   background-color: #f0ffff;
-   padding: 0px 0px px;
+   background-color: var(--bg-cyan);
+   padding: 0px 0px 50px;
+   margin-top: 130px;
 }
 .destination-title{
    padding: 30px 0px;
@@ -148,8 +167,13 @@ img{
 }
 .desti-content-title h2{
    padding: 15px 0px;
-   border-bottom: 1.5px solid gainsboro;
-   text-decoration: underline;
+}
+.line{
+   width: 34.5%;
+   border: 0.7px solid var(--black);
+}
+.desti-text{
+   margin-bottom: 15px;
 }
 .desti-text h3{
    padding: 15px 0px;
@@ -158,12 +182,16 @@ img{
    padding: 5px 0px 20px;
 }
 .desti-text a{
-   margin: 20px 0px;
-   padding: 10px;
+   padding: 10px 25px;
    color: whitesmoke;
-   background-color: #6f00ff;
-   border-radius: 5px;
-   margin-bottom: 5px;
+   background-color: var(--deep-blue);
+   border-radius: 7px;
+   border: 2px solid var(--navy);
+   font-family: 'Lily Script One', cursive;
+}
+.desti-text a:hover{
+   background-color: var(--lite-blue);
+   transition-duration: .3s;
 }
 .destiname{
    width: 100%;
@@ -172,24 +200,26 @@ img{
    flex-wrap: wrap;
 }
 .destiname p{
-   padding: 20px 0px;
+   padding: 50px 0px 35px;
 }
 .desti-content{
    width: 32%;
    background-color: white;
    padding: 20px;
    margin-bottom: 40px;
-   box-shadow: .5px 1px 8px  #00b7eb;
+   box-shadow: .5px 1px 8px var(--blue);
    justify-content: space-between;
    border-radius: 2px;
 }
 .desti-img img{
    width: 475px;
-   height: 310px;
+   height: 300px;
+   margin: 0 auto;
+   border-radius: 7px;
 }
 /*----Footer Section----*/
 .footer-area{
-   background-color: #00FFEF;
+   background-color: var(--lite-cyan);
 }
 .footer{
    width: 100%;

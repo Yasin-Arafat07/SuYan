@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 
 body{
 	font-family: 'Noto Sans JP', sans-serif;
@@ -8,8 +9,23 @@ body{
    padding: 0px;
    box-sizing: border-box;
 }
+:root{
+   --deep-cyan: #008B8B;
+   --lite-cyan: #00FFEF;
+   --cyan: #00ffff;
+   --bg-cyan: #F0FFFF;
+   --deep-blue: #0000cd;
+   --lite-blue: #4f86f7;
+   --red: #ff0000;
+   --navy: #000080;
+   --blue: #00B7EB;
+}
+p{
+   /*font-family: 'Josefin Sans', sans-serif;*/
+}
 a{
    text-decoration: none;
+   /*font-family: 'Josefin Sans', sans-serif;*/
 }
 ul{
    list-style-type: none;
@@ -25,7 +41,7 @@ img{
 }
 /*---Web Top---*/
 .top-up{
-	background-color: #008b8b;
+	background-color: var(--deep-cyan);
    position: fixed;
    top: 0;
    left: 0;
@@ -39,7 +55,7 @@ img{
 
 .mail a, .mail i, .phone a, .phone i{
    margin-right: 5px;
-   color: #f5f5f5;
+   color: whitesmoke;
 }
 .mail, .phone{
    padding-right: 15px;
@@ -53,11 +69,11 @@ img{
    justify-content: flex-end;
 }
 .sociallink li a{
-   color: #f2f3f4;
+   color: whitesmoke;
    padding: 0px 15px;
 }
 .sociallink li a:hover{
-   color: #000075;
+   color: var(--navy);
    transition-duration: 0.4s;
    background-color: whitesmoke;
    border-radius: 10px;
@@ -74,13 +90,14 @@ img{
 
 /*------Menu Area-----*/
 .header-area{
-   background-color: #00ffef;
+   background-color: var(--lite-cyan);
    padding: 20px 0px;
    position: fixed;
-   top: 33px;
+   top: 38px;
    left: 0;
    width: 100%;
    z-index: 999;
+   box-shadow: 5px 2px 8px #555555;
 }
 
 .head-inner{
@@ -96,9 +113,13 @@ img{
    font-size: 25px;
    width: 10%
 }
+.logo a{
+   color: black;
+}
 .logo i{
    font-size: 30px;
    text-align: center;
+   color: black;
 }
 .menu{
    width: 80%;
@@ -114,41 +135,40 @@ img{
 .menu ul a{
   color: black;
   padding: 15px 20px;
-  border-width: 2px black;
   font-size: 20px;
 }
 .menu ul a:hover{
-   text-decoration: underline white 3px;
-   padding-bottom: 5px;
-   transition-duration: 0.3s;
+   border-bottom: 3px solid white;
+   transition-duration: .3s;
+   /*transition: all 2s ease;*/
+   /*background-color: red;*/
+   /*border-color: red;*/
+
 }
 /*-----Banner Area----*/
 .banner-area{
    background-image: url(image/menu.jpg);
-   
    background-size: cover;
-   
    background-position:center center;
-   /*position: relative;*/
-   
+   /*filter: blur(5px);*/
+   margin-top: 130px;
 }
 .banner{
   color: white;
   text-align: center;
-  border: 3px solid #f1f1f1;
+  border: 3px solid whitesmoke;
   padding: 50px;
   position: absolute;
-  /*opacity: 0.3;*/
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   width: 70%;
   /*filter: blur(0px);*/
   background-color: rgba(0,0,0,.7);
+  border-radius: 5px;
 }
 .banner-overlay{
   /*filter: blur(8px);*/
-  
   padding: 300px 0px;
   position: relative;
   width: 100%;
@@ -161,21 +181,23 @@ img{
 .banner p{
    margin-bottom: 20px; 
 }
-.banner a{
-   color: #008b8b;
-   background-color: #00ffff;
+.banner a button{
+   color: var(--deep-cyan);
+   background-color: var(--cyan);
    padding: 10px 20px;
    text-align: center;
    border-radius: 5px;
+   border: 2px solid var(--deep-cyan);
+   display: inline-block;
 }
-.banner a:hover{
-   color: whitesmoke;
-   background-color: #008b8b;
+.banner a button:hover{
+   color: white;
+   background-color: var(--deep-cyan);
    transition-duration: 0.3s;
 }
 /*-----Bottom Banner---*/
 .down-banner{
-   background-color: #00ffff;
+   background-color: var(--cyan);
    
 }
 .more-about{
@@ -210,25 +232,38 @@ img{
    width: 20%;
    margin: 20px 0px;
    text-align: center;
-   padding-top: 20px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 .bottom-link a{
-   background-color: #6F00FF;
+   background-color: var(--deep-blue);
    font-size: 20px;
-   color: whitesmoke;
-   padding: 5px 20px;
-   border-radius: 10px;
+   color: white;
+   padding: 7px 25px;
+   border-radius: 7px;
+   border: 2px solid var(--navy);
+   font-family: 'Lily Script One', cursive;
+}
+.bottom-link a:hover{
+   background-color: var(--lite-blue);
+   transition-duration: .3s;
 }
 
 /*------Advice Section---*/
 .advice{
-   background-color: #f0ffff;
-   
+   padding-top: 70px;
+   background-color: var(--bg-cyan);
 }
 .advice-text{
    text-align: center;
-   padding: 20px 0px;
-   margin-bottom: 20px;
+   padding: 50px 0px;
+   margin-bottom: 30px;
+}
+.advice-text p{
+   width: 75%;
+   margin: 0 auto;
+   padding-top: 20px;
 }
 .adviceber{
    display: flex;
@@ -240,19 +275,27 @@ img{
    text-align: center;
    background-color: white;
    padding: 20px;
-   margin-bottom: 40px;
+   margin-bottom: 70px;
    box-shadow: 0px 1px 4px #00b7eb;
 }
 .advice-section i{
    font-size: 30px;
-   color: #00b7eb;
+   color: var(--blue);
+}
+.advice-section .rotate{
+   transform: rotate(-45deg);
+}
+.advice-section i:hover{
+   transform: rotate(-90deg);
+   /*transform: translate(50px, -150px);*/
+   transition-duration: .3s;
 }
 .advice-section h3{
    padding: 10px 0px;
 }
 /*----Contact for This*/
 .contact-us{
-   background-color: #00ffff;
+   background-color: var(--cyan);
 }
 .contact-for{
    display: flex;
@@ -271,49 +314,55 @@ img{
    width: 80%;
 }
 .contact-link{
-   width: 15%;
-   
+   width: 25%;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
 }
 .contact-link a{
-   justify-content: flex-end;
-   width: 20%;
-   height: auto;
    font-size: 20px;
    color: whitesmoke;
-   justify-content: space-between;
-   background-color: #6f00ff;
-   
+   background-color: var(--deep-blue);
+   font-family: 'Lily Script One', cursive;
    text-align: center;
-   border-radius: 10px;
-   left: 50%;
-   top: 50%;
-   transform: translate(-50%, -50%);
-   padding: 5px 20px;
-
+   border-radius: 7px;
+   padding: 7px 20px;
+   border: 2px solid var(--navy);
+}
+.contact-link a:hover{
+   background-color: var(--lite-blue);
+   transition-duration: .3s;
 }
 
 /*------Popular Destinsation*/
 .destination{
-   background-color: #f0ffff;
+   background-color: var(--bg-cyan);
 }
 .desti-title{
-   padding: 30px 0px;
+   padding: 70px 0px 50px;
    font-weight: bold;
 
+}
+.desti-text{
+   margin-bottom: 15px;
 }
 .desti-text h3{
    padding: 15px 0px;
 }
 .desti-text p{
-   padding: 5px 0px 20px;
+   padding: 10px 0px 35px;
 }
 .desti-text a{
-   margin: 20px 0px;
-   padding: 10px;
+   padding: 10px 25px;
    color: whitesmoke;
-   background-color: #6f00ff;
-   border-radius: 5px;
-   margin-bottom: 5px;
+   background-color: var(--deep-blue);
+   border-radius: 7px;
+   border: 2px solid var(--navy);
+   font-family: 'Lily Script One', cursive;
+}
+.desti-text a:hover{
+   background-color: var(--lite-blue);
+   transition-duration: .3s;
 }
 .destiname{
    width: 100%;
@@ -326,56 +375,68 @@ img{
    background-color: white;
    padding: 20px;
    margin-bottom: 40px;
-   box-shadow: .5px 1px 8px  #00b7eb;
+   box-shadow: .5px 1px 8px var(--blue);
    justify-content: space-between;
    border-radius: 2px;
 }
 .desti-img img{
    width: 475px;
-   height: 310px;
+   height: 300px;
+   margin: 0 auto;
+   border-radius: 7px;
 }
 /*-----Subscribe Section*/
 .subscribe{
-   background-color: #00FFFF;
+   background-color: var(--cyan);
 }
 .subs-area{
+   width: 100%;
    align-items: center;
    margin: 20px 0px;
    display: flex;
    justify-content: space-between;
+   /*background-color: red;*/
 }
 .subs-content{
-   width: 100%;
+   width: 70%;
    display: flex;
    padding: 30px 0px;
    
    justify-content: flex-start;
 }
 .subs-content h2{
-   width: 75%;
+   /*background-color: blue;*/
    justify-content: space-between;
    align-items: center;
 }
-.subs-content input{
+.subs-mail{
    width: 25%;
-   border: none;
-   justify-content: flex-end;
-   
+   /*background-color: green;*/
 }
-.subs-content input[type="e-mail"]{
-   width: 15%;
+.subs-mail input{
+   /*width: 100%;*/
+   border: none;
+   
+   padding: 10px 25px;
+}
+.subs-mail input[type="email"]{
+   width: 70%;
    border-bottom: 2px solid gainsboro;
-   padding: 0px 10px;
-   margin-right: 10px;
-
+   padding: 10px 10px;
+   /*margin-right: 10px;*/
+   border-radius: 3px;
+   font-size: 17px;
    }
-.subs-content input[type="submit"]{
-   width: 8%;
+.subs-mail input[type="submit"]{
+   padding: 10px 20px;
    font-weight: bold;
    color: white;
-   background-color: #ff0000;
-   border-radius: 5px;
+   background-color: var(--red);
+   border-radius: 3px;
+   cursor: pointer;
    box-shadow: 2px 5px 5px gainsboro;
+   font-family: 'Lobster', cursive;
+   font-size: 15px;
    }
    /*-----Testimonial Area----*/
    .testimonial{
