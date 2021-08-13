@@ -272,27 +272,28 @@ img{
    font-size: 16px;
 }
 .blog-read{
-   margin-top: 30px;
-   margin-bottom: 20px;
-}
-.blog-read a{
-   font-weight: bold;
-   color: white;
-   background-color: var(--deep-cyan);
-   padding: 10px 25px;
-   border: 1.5px solid var(--deep-cyan);
-   border-radius: 7px;
+   display: flex;
+   width: 13.1%;
+   position: relative;
+   background-color: red;
 }
 .blog-read a:hover{
    background-color: var(--lite-cyan);
    transition-duration: .3s;
+   display: block;
 }
-.blog-read i{
-   padding-left: 10px;
+.blog-read a{
+   text-align: center;
+   padding: 10px 30px;
+   /*margin: 0 auto;*/
+}
+.blog-read a+i{
+   margin-left: 10px;
    font-size: 20px;
-   padding-top: 3px;
+   margin-top: 20px;
+   /*position: absolute;*/
 }
-.blog-read i:hover{
+.blog-read a i:hover{
    color: gray;
    background-color: white;
    transition-duration: 3s;

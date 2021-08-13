@@ -146,7 +146,7 @@ fieldset{
 /*----Contact Media Section Start----*/
 .contact-section-all{
    background-color: var(--bg-cyan);
-   padding: 100px 0 150px;
+   padding: 100px 0 100px;
    margin-top: 130px;
 }
 .contact-title{
@@ -271,11 +271,11 @@ textarea{
 
 /*----Map Section Start----*/
 .map-canvas iframe{
-   background-color: var(--bg-cyan);
+   /*background-color: red;*/
    width: 100%;
    height: 600px;
    border: 0;
-   padding-bottom: 100px;
+   margin-top: 150px;
 }
 /*----Map Section End----*/
 
